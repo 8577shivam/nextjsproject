@@ -29,7 +29,7 @@ const Product = () => {
       </div>
       <div
         ref={scrollContainerRef}
-        className="productcarousel  flex gap-8 items-center justify-start overflow-x-auto scroll-smooth scrollbar-hide"
+        className="productcarousel"
       >
         <ProductCard/>
         <ProductCard />
@@ -42,10 +42,10 @@ const Product = () => {
         <ProductCard />
       </div>
       <div className="flex">
-        <button onClick={scrollLeft} className="w-12 h-12 mt-14 m-2 flex justify-center items-center rounded-full bg-white filter drop-shadow-sm">
+        <button onClick={scrollLeft} className="w-[3.3vw] h-[3.3vw] mt-14 m-2 flex justify-center items-center rounded-full bg-white filter drop-shadow-sm">
           <FiChevronLeft />
         </button>
-        <button onClick={scrollRight} className="w-12 h-12 mt-14 m-2 flex justify-center items-center rounded-full bg-white filter drop-shadow-sm">
+        <button onClick={scrollRight} className="w-[3.3vw] h-[3.3vw] mt-14 m-2 flex justify-center items-center rounded-full bg-white filter drop-shadow-sm">
           <FiChevronRight />
         </button>
       </div>

@@ -1,20 +1,20 @@
-"use-client";
-import React from "react";
+"use client";
+import React,{useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 
 const Navbar = () => {
+  const [showoption,setShowoption]=useState(false)
   return (
     <>
       <div className="navigation">
         <div className="logo">Logo</div>
-        <div className="hamburger">
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-        </div>
-        <div className="midnav">
+        
+        <div className={
+          showoption?"sideoption":"midnav"
+        }>
+          
           <ul className="nav-links">
             <li>Our Story</li>
             <li>Products</li>
@@ -23,6 +23,11 @@ const Navbar = () => {
             <li>SUSTAINABILITY</li>
             <li>Contact Us</li>
           </ul>
+        </div>
+        <div className="hamburger" onClick={()=>setShowoption(!showoption)} >
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
         </div>
         <div className=" lastnav flex items-center">
           <svg

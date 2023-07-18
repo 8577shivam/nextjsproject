@@ -2,7 +2,7 @@ import React from "react";
 function ProductCard() {
   return (
     <>
-      <div className="  productcard">
+      <div className="productcard">
         <div className="toppart">
           <img src="images/bottle.png" alt="img" />
         </div>

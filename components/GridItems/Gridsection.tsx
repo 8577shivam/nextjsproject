@@ -14,7 +14,7 @@ const Gridsection:React.FC<gridProps> = ({data}) => {
     <div className={`gridbox${data.id} gridbox`}>
         <div className="gridtext">
             <p className="gridtitle">{data.title}</p>
-            <p>{data.info}</p>
+            <p className='gridinfo'>{data.info}</p>
         </div>
         <div className="gridimg">
             <img src={data.imgsrc} alt="bottle" />

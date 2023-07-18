@@ -28,13 +28,13 @@ export default function VideoCarousel({ slides }: CarouselProps) {
   return (
     <div className="sliderstyle">
       <div
-        className="leftarrowstyle w-10 h-10 flex justify-center items-center rounded-full bg-white filter drop-shadow-md"
+        className="leftarrowstyle w-[2.7vw] h-[2.7vw] flex justify-center items-center rounded-full bg-white filter drop-shadow-md"
         onClick={handlePrev}
       >
         <FiChevronLeft />
       </div>
       <div
-        className="rightarrowstyle w-10 h-10 flex justify-center items-center rounded-full bg-white filter drop-shadow-md"
+        className="rightarrowstyle w-[2.7vw] h-[2.7vw] flex justify-center items-center rounded-full bg-white filter drop-shadow-md"
         onClick={handleNext}
       >
         <FiChevronRight />

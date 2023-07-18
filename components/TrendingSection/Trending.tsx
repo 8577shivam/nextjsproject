@@ -47,12 +47,12 @@ const Trending: React.FC = () => {
       <div className="topopt">
         <p className="trndname">Trending Blogs</p>
       </div>
-      <div className="trendingcards mt-20">
+      <div className="trendingcards mt-[5.5vw]">
         {dataobj.map((data) => {
           return <Card key={data.id} data={data} />;
         })}
       </div>
-      <p className="viewall text-center mt-16">View All</p>
+      <p className="viewall text-center mt-[4.4vw]">View All</p>
     </div>
   );
 };

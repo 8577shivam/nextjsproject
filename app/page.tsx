@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main >
-      <div className="min-h-screen p-12">
+    <main className='min-h-screen' >
+      <div className="p-[3.3vw]">
       <Navbar/>
      <Hero/>
      <Story/>
