@@ -267,7 +267,7 @@ text-transform: uppercase;
   font-size: 1.5vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
   text-decoration-line: underline;
   cursor: pointer;
 }
